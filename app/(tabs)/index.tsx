@@ -10,6 +10,7 @@ export default function HomeScreen() {
         <Image
           source={require("@/assets/images/index-banner.png")}
           style={styles.headerImage}
+          resizeMode="cover"
         />
       }
     >
@@ -20,8 +21,7 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
   headerImage: {
-    objectFit: "cover",
-    width: "auto",
+    width: "100%",
     height: 300,
   },
 });
