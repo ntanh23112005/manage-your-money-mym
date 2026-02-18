@@ -1,4 +1,5 @@
 import { Text, View } from "react-native";
+import IncomeChart from "./income-chart-content";
 
 export default function HomePageContent() {
   return (
@@ -33,6 +34,17 @@ export default function HomePageContent() {
             5.000.000đ
           </Text>
         </View>
+      </View>
+
+      {/* Chart by month section */}
+      <View className="flex flex-col mt-6 gap-3">
+        <Text className="text-lg font-semibold text-pink-400">
+          Biểu đồ thống kê theo tháng
+        </Text>
+        <Text className="text-sm text-pink-300">
+          Cột dọc: số tiền, cột ngang: tháng trong năm
+        </Text>
+        <IncomeChart />
       </View>
     </View>
   );
